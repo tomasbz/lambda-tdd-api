@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "lambda-tdd-api-executor",
+    "name": "lambda-tdd-api",
+    "region": "us-west-2"
+  },
+  "api": {
+    "id": "uyy23nv4g4",
+    "module": "api"
+  }
+}

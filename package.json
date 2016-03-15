@@ -1,0 +1,14 @@
+{
+  "name": "lambda-tdd-api",
+  "description": "Lambda tdd api example",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "start": "claudia create --name lambda-tdd-api --region us-west-2 --api-module api",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "claudia-api-builder": "^1.0.2"
+  }
+}
