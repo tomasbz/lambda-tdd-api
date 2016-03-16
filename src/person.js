@@ -6,8 +6,8 @@ module.exports = {
             "age": "30"
         },
         {
-            "name": "Gabe",
-            "age": "27"
+            "age": "27",
+            "name": "Gabe"
         }
     ],
 

@@ -1,3 +1,5 @@
+var expected = require('../test/expectedData/expected.json');
+var test = require('../test/testData/test.json');
 var person = require('../src/person.js');
 var assert = require('assert');
 
@@ -7,7 +9,7 @@ var assert = require('assert');
 describe('list', function()
 {
     it('should have the same array values', function(){
-        assert.deepEqual(person.people, person.getList());
+        assert.deepEqual(expected.getList, person.getList());
     });
 });
 
@@ -17,6 +19,6 @@ describe('list', function()
 describe('getPersonByName', function()
 {
     it('should be equal', function(){
-        assert.deepEqual(person.people[0], person.getPersonByName("Tomas"));
+        assert.deepEqual(expected.getPersonByName, person.getPersonByName(test.getPersonByName));
     });
 });

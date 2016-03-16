@@ -1,0 +1,17 @@
+{
+  "getList": [
+    {
+      "name" : "Tomas",
+      "age": "30"
+    },
+    {
+      "name": "Gabe",
+      "age": "27"
+    }
+  ],
+
+  "getPersonByName": {
+    "name" : "Tomas",
+    "age": "30"
+  }
+}
