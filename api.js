@@ -14,8 +14,8 @@ api.get('/list', function (request) {
 
 /**
  * get person by name
- * endpoint: /getPerson
+ * endpoint: /getPerson/{name}
  */
-api.get('/getPerson', function (request) {
-    return person.getPersonByName(request.queryString.name);
+api.get('/getPerson/{name}', function (request) {
+    return person.getPersonByName(request.pathParams.name);
 });
