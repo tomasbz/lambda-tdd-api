@@ -19,3 +19,11 @@ api.get('/list', function (request) {
 api.get('/getPerson/{name}', function (request) {
     return person.getPersonByName(request.pathParams.name);
 });
+
+/**
+ * print post message
+ */
+api.post('/echo', function(request){
+    return request.body;
+},
+{ apiKeyRequired: true });
