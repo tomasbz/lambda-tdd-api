@@ -5,7 +5,8 @@
     "*.js"
   ],
   "scripts": {
-    "start": "claudia create --name lambda-tdd-api --region us-west-2 --api-module api",
+    "start": "claudia create --name lambda-tdd-api --region us-west-2 --api-module api --version dev",
+    "deploy": "claudia update --version dev",
     "test": "mocha"
   },
   "dependencies": {

@@ -1,4 +1,4 @@
-require('./functions.js');
+var functions = require('./functions.js');
 var ApiBuilder = require('claudia-api-builder');
 var api = new ApiBuilder();
 
@@ -9,12 +9,12 @@ module.exports = api;
  * endpoint: /list
  */
 api.get('/list', function (request) {
-    return getList(request)
+    return functions.getList(request);
 });
 
 /**
  * get person by name
  */
 api.get('/getPerson', function (request) {
-    return getPersonByName(request.queryString.name);
+    return functions.getPersonByName(request.queryString.name);
 });

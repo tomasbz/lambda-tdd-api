@@ -1,36 +1,37 @@
-people = [
+module.exports = {
+
+    people: [
+        {
+            "name" : "Tomas",
+            "age": "30"
+        },
+        {
+            "name": "Gabe",
+            "age": "27"
+        }
+    ],
+
+    /**
+     * get people list
+     */
+    getList: function ()
     {
-        "name" : "Tomas",
-        "age": "30"
+        return this.people;
     },
+
+    /**
+     * get person by name
+     * @param name
+     */
+    getPersonByName: function(name)
     {
-        "name": "Gabe",
-        "age": "27"
+        var returnData = {};
+        this.people.forEach(function(value){
+            if(value.name == name)
+                returnData = value;
+        });
+
+        return returnData;
     }
-];
 
-
-/**
- * get list of people
- */
-getList = function ()
-{
-    return people;
-};
-
-/**
- * get person by name
- *
- * @param request
- * @returns {*}
- */
-getPersonByName = function(name)
-{
-    var returnData = {};
-    people.forEach(function(value){
-        if(value.name == name)
-            returnData = value;
-    });
-
-    return returnData;
 };
